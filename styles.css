@@ -1,0 +1,90 @@
+:root {
+  --neutral1: hsl(243, 96%, 9%);
+  --neutral2: hsl(243, 27%, 20%);
+  --neutral3: hsl(243, 23%, 24%);
+  --neutral4: hsl(243, 23%, 30%);
+  --neutral5: hsl(240, 6%, 70%);
+  --neutral6: hsl(250, 6%, 84%);
+  --neutral7: hsl(0, 0%, 100%);
+}
+
+body {
+  background-color: hsl(243, 96%, 9%);
+}
+
+.container {
+  width: 95%;
+  height: 100%;
+  background: red;
+  margin: auto;
+}
+
+.dropdown {
+  background-color: yellow;
+  height: 60px;
+  padding: 9px;
+}
+
+.temperature-units {
+  float: right;
+  background: hsl(243, 23%, 30%);
+  color: hsl(0, 0%, 100%);
+  width: 100px;
+  height: 30px;
+  padding: 3px;
+  border-radius: 5px;
+  border: none;
+  margin: 5px;
+  font-size: 15px;
+  text-align: right;
+}
+
+h1 {
+  color: hsl(0, 0%, 100%);
+  text-align: center;
+}
+
+.inputs {
+  display: grid;
+  justify-content: center;
+  grid-template-columns: 0.4fr 100px;
+  gap: 10px;
+}
+
+input {
+  height: 30px;
+  border-radius: 5px;
+  border: none;
+}
+
+input[type="submit"] {
+  background: purple;
+  width: 70px;
+  color: hsl(250, 6%, 84%);
+}
+
+.forecast {
+  width: 50%;
+  height: 150px;
+  background: hsl(243, 23%, 30%);
+  padding: 15px;
+  border-radius: 10px;
+}
+
+.location,
+.temperature {
+  color: hsl(0, 0%, 100%);
+}
+
+.date {
+  color: hsl(250, 6%, 84%);
+}
+
+#temperatureFeel,
+#humidity,
+#wind,
+#precipitation {
+  width: 15%;
+  height: 65px;
+  background: hsl(243, 23%, 30%);
+}

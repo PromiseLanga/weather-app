@@ -5,12 +5,98 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="styles.css">
+
     <title>Weather App</title>
 </head>
 
 <body>
-    <h1>Heelo</h1>
+    <div class="container">
+        <div class="dropdown">
+            <img src="./src/logo.svg" alt="logo" />
 
+            <select name="units" id="tempUnits" class="temperature-units">
+                <!-- <img src="./src/icon-units.svg" class="units-logo" /> -->
+                <option value="">Units</option>
+                <option value="imperial">Imperial</option>
+                <option value="metric">Metric</option>
+            </select>
+        </div>
+        <h1>How's the sky looking today?</h1>
+
+        <form action="#" id="formContainer" class="form">
+
+            <div class="inputs"><input type="search" placeholder="🔍 Search for a place..." id="input-search">
+                <input type="submit" value="search" id="input-submit">
+            </div>
+        </form>
+
+        <div class="grid-container" id="grid">
+            <div class="forecast" id="locationForecast">
+                <p id="place" class="location">Berlin, Germany</p>
+                <p id="currentDate" class="date">Tuesday, Aug 5, 2025</p>
+                <p id="currentTemperature" class="temperature"><img src="./src/icon-sunny.webp" width="50px" />20°</p>
+            </div>
+            <div id="temperatureFeel">
+                <p id="feelsLike" class="feels-like">Feels like</p>
+                <p>18°</p>
+            </div>
+            <div id="humidity">
+                <p id="humidityTemperature" class="humidity-temperature">Humidity</p>
+                <p>46%</p>
+            </div>
+            <div id="wind">
+                <p id="windSpeed" class="wind-speed">Wind</p>
+                <p>14 km/h</p>
+            </div>
+            <div id="precipitation">
+                <p id="precipitationValue" class="precipitation-value">Precipitation</p>
+                <p>0 mm</p>
+            </div>
+            <div id="dailyForecast" class="daily-forecast">
+                <div class="day">
+                    <p id="day">Mon</p>
+                    <img src="" alt="">
+                    <span></span><span></span>
+                </div>
+                <div class="day">
+                    <p id="day">Tue</p>
+                    <img src="" alt="">
+                    <span></span><span></span>
+                </div>
+                <div class="day">
+                    <p id="day">Wed</p>
+                    <img src="" alt="">
+                    <span></span><span></span>
+                </div>
+                <div class="day">
+                    <p id="day">Thu</p>
+                    <img src="" alt="">
+                    <span></span><span></span>
+                </div>
+                <div class="day">
+                    <p id="day">Fri</p>
+                    <img src="" alt="">
+                    <span></span><span></span>
+                </div>
+                <div class="day">
+                    <p id="day">Sat</p>
+                    <img src="" alt="">
+                    <span></span><span></span>
+                </div>
+                <div class="day">
+                    <p id="day">Sun</p>
+                    <img src="" alt="">
+                    <span></span><span></span>
+                </div>
+
+
+            </div>
+        </div>
+
+    </div>
+
+
+    <script src="script.js"></script>
 </body>
 
 </html>
