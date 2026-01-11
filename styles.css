@@ -87,4 +87,33 @@ input[type="submit"] {
   width: 15%;
   height: 65px;
   background: hsl(243, 23%, 30%);
+  border-radius: 10px;
+  color: hsl(250, 6%, 84%);
+}
+
+.degrees,
+.percentage,
+.kilometers,
+.millimeters {
+  color: hsl(0, 0%, 100%);
+}
+
+h3 {
+  color: hsl(0, 0%, 100%);
+}
+
+.day {
+  width: 10%;
+  background: hsl(243, 23%, 30%);
+  color: hsl(0, 0%, 100%);
+  border-radius: 10px;
+}
+
+#day {
+  text-align: center;
+}
+
+span {
+  display: inline-block;
+  margin: 5px;
 }
