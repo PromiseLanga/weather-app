@@ -15,7 +15,7 @@ body {
 .container {
   width: 95%;
   height: 100%;
-  background: red;
+
   margin: auto;
 }
 
@@ -103,10 +103,11 @@ h3 {
 }
 
 .day {
-  width: 10%;
+  width: 15%;
   background: hsl(243, 23%, 30%);
   color: hsl(0, 0%, 100%);
   border-radius: 10px;
+  margin: 15px;
 }
 
 #day {
@@ -116,4 +117,105 @@ h3 {
 span {
   display: inline-block;
   margin: 5px;
+}
+
+.hourly-forecast {
+  width: 45%;
+  height: 100%;
+  background: hsl(243, 23%, 30%);
+  border-radius: 10px;
+  margin: 15px;
+}
+
+.forecast-container {
+  display: flex;
+  justify-content: space-between;
+  margin: 5px;
+}
+
+select {
+  background: hsl(243, 23%, 25%);
+  color: hsl(0, 0%, 100%);
+  width: 100px;
+  height: 30px;
+  padding: 3px;
+  border-radius: 5px;
+  border: none;
+  margin: 10px;
+  font-size: 15px;
+  text-align: center;
+}
+
+.hourly-temperatureOne {
+  color: hsl(0, 0%, 100%);
+  background: hsl(243, 23%, 25%);
+  width: 88%;
+  height: 100px;
+  margin: 15px;
+}
+
+.hourly-temperatureTwo {
+  color: hsl(0, 0%, 100%);
+  background: hsl(243, 23%, 25%);
+  width: 88%;
+  height: 100px;
+  margin: 15px;
+}
+
+.hourly-temperatureThree {
+  color: hsl(0, 0%, 100%);
+  background: hsl(243, 23%, 25%);
+  width: 88%;
+  height: 100px;
+  margin: 15px;
+}
+
+.hourly-temperatureFour {
+  color: hsl(0, 0%, 100%);
+  background: hsl(243, 23%, 25%);
+  width: 88%;
+  height: 100px;
+  margin: 15px;
+}
+
+.hourly-temperatureFive {
+  color: hsl(0, 0%, 100%);
+  background: hsl(243, 23%, 25%);
+  width: 88%;
+  height: 100px;
+  margin: 15px;
+}
+
+.hourly-temperatureSix {
+  color: hsl(0, 0%, 100%);
+  background: hsl(243, 23%, 25%);
+  width: 88%;
+  height: 100px;
+  margin: 15px;
+}
+
+.hourly-temperatureSeven {
+  color: hsl(0, 0%, 100%);
+  background: hsl(243, 23%, 25%);
+  width: 88%;
+  height: 100px;
+  margin: 15px;
+}
+
+.hourly-temperatureEight {
+  color: hsl(0, 0%, 100%);
+  background: hsl(243, 23%, 25%);
+  width: 88%;
+  height: 100px;
+  margin: 15px;
+}
+
+.grid-container {
+  background: red;
+}
+
+@media only screen and (max-width: 992px) {
+  .container {
+    background: hsl(243, 27%, 20%);
+  }
 }
