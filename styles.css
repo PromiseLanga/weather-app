@@ -49,6 +49,7 @@ h1 {
   justify-content: center;
   grid-template-columns: 0.4fr 100px;
   gap: 10px;
+  margin: 25px;
 }
 
 input {
@@ -66,7 +67,7 @@ input[type="submit"] {
 .forecast {
   width: 50%;
   height: 150px;
-  background: hsl(243, 23%, 30%);
+  background: url(./src/bg-today-large.svg);
   padding: 15px;
   border-radius: 10px;
 }
@@ -80,21 +81,22 @@ input[type="submit"] {
   color: hsl(250, 6%, 84%);
 }
 
-#temperatureFeel,
-#humidity,
-#wind,
-#precipitation {
-  width: 15%;
-  height: 65px;
-  background: hsl(243, 23%, 30%);
-  border-radius: 10px;
-  color: hsl(250, 6%, 84%);
+.weather-stats {
+  display: flex;
+  justify-content: space-between;
+  /* background: hsl(243, 23%, 30%); */
+  margin: 15px;
 }
 
-.degrees,
-.percentage,
-.kilometers,
-.millimeters {
+.detail-item {
+  border-radius: 10px;
+  color: hsl(250, 6%, 84%);
+  background: blue;
+
+  text-align: center;
+}
+
+.stat-value {
   color: hsl(0, 0%, 100%);
 }
 
@@ -102,29 +104,29 @@ h3 {
   color: hsl(0, 0%, 100%);
 }
 
-.day {
-  width: 15%;
-  background: hsl(243, 23%, 30%);
+.forecast-item {
+  background: red;
+  width: 16rem;
   color: hsl(0, 0%, 100%);
   border-radius: 10px;
   margin: 15px;
 }
 
-#day {
+.weekday {
   text-align: center;
 }
 
-span {
-  display: inline-block;
-  margin: 5px;
+.forecast-item img {
+  display: block;
+  margin: 0 auto;
 }
 
 .hourly-forecast {
   width: 45%;
-  height: 100%;
   background: hsl(243, 23%, 30%);
   border-radius: 10px;
   margin: 15px;
+  float: right;
 }
 
 .forecast-container {
@@ -146,72 +148,101 @@ select {
   text-align: center;
 }
 
-.hourly-temperatureOne {
+.hourly-temperature-one {
   color: hsl(0, 0%, 100%);
   background: hsl(243, 23%, 25%);
   width: 88%;
   height: 100px;
   margin: 15px;
+  padding: 10px;
+  border-radius: 10px;
+  border: 1px solid hsl(243, 30%, 60%);
 }
 
-.hourly-temperatureTwo {
+/* .hourly span {
+  float: right;
+} */
+
+.hourly-temperature-two {
   color: hsl(0, 0%, 100%);
   background: hsl(243, 23%, 25%);
   width: 88%;
   height: 100px;
   margin: 15px;
+  padding: 10px;
+  border-radius: 10px;
+  border: 1px solid hsl(243, 30%, 60%);
 }
 
-.hourly-temperatureThree {
+.hourly-temperature-three {
   color: hsl(0, 0%, 100%);
   background: hsl(243, 23%, 25%);
   width: 88%;
   height: 100px;
   margin: 15px;
+  padding: 10px;
+  border-radius: 10px;
+  border: 1px solid hsl(243, 30%, 60%);
 }
 
-.hourly-temperatureFour {
+.hourly-temperature-four {
   color: hsl(0, 0%, 100%);
   background: hsl(243, 23%, 25%);
   width: 88%;
   height: 100px;
   margin: 15px;
+  padding: 10px;
+  border-radius: 10px;
+  border: 1px solid hsl(243, 30%, 60%);
 }
 
-.hourly-temperatureFive {
+.hourly-temperature-five {
   color: hsl(0, 0%, 100%);
   background: hsl(243, 23%, 25%);
   width: 88%;
   height: 100px;
   margin: 15px;
+  padding: 10px;
+  border-radius: 10px;
+  border: 1px solid hsl(243, 30%, 60%);
 }
 
-.hourly-temperatureSix {
+.hourly-temperature-six {
   color: hsl(0, 0%, 100%);
   background: hsl(243, 23%, 25%);
   width: 88%;
   height: 100px;
   margin: 15px;
+  padding: 10px;
+  border-radius: 10px;
+  border: 1px solid hsl(243, 30%, 60%);
 }
 
-.hourly-temperatureSeven {
+.hourly-temperature-seven {
   color: hsl(0, 0%, 100%);
   background: hsl(243, 23%, 25%);
   width: 88%;
   height: 100px;
   margin: 15px;
+  padding: 10px;
+  border-radius: 10px;
+  border: 1px solid hsl(243, 30%, 60%);
 }
 
-.hourly-temperatureEight {
+.hourly-temperature-eight {
   color: hsl(0, 0%, 100%);
   background: hsl(243, 23%, 25%);
   width: 88%;
   height: 100px;
   margin: 15px;
+  padding: 10px;
+  border-radius: 10px;
+  border: 1px solid hsl(243, 30%, 60%);
 }
 
 .grid-container {
-  background: red;
+  background: hsl(243, 96%, 9%);
+  display: grid;
 }
 
 @media only screen and (max-width: 992px) {
