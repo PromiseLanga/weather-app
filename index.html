@@ -54,113 +54,125 @@
                     <p id="value-precip" class="stat-value">0 mm</p>
                 </div>
             </div>
+
             <div id="daily-forecast" class="daily-forecast">
-                <h3>Daily forecast</h3>
+                <h3>Daily forecast</h3><br>
                 <div class="forecast-item">
                     <p id="forecast-day" class="weekday">Mon</p>
                     <img src="./src/icon-drizzle.webp" alt="drizzle" width="50px">
-                    <span class="temp-high">22°</span><span class="temp-low">11°</span>
+                    <div class="temp-group">
+                        <span class="temp-high">22°</span><span class="temp-low">11°</span>
+                    </div>
                 </div>
                 <div class="forecast-item">
                     <p id="forecast-day" class="weekday">Tue</p>
                     <img src="./src/icon-fog.webp" alt="fog" width="50px">
-                    <span class="temp-high">22°</span><span class="temp-low">11°</span>
+                    <div class="temp-group">
+                        <span class="temp-high">22°</span><span class="temp-low">11°</span>
+                    </div>
 
                 </div>
                 <div class="forecast-item">
                     <p id="forecast-day" class="weekday">Wed</p>
                     <img src="./src/icon-partly-cloudy.webp" alt="partly cloudy" width="50px">
-                    <span class="temp-high">32°</span><span class="temp-low">20°</span>
+                    <div class="temp-group">
+                        <span class="temp-high">22°</span><span class="temp-low">11°</span>
+                    </div>
                 </div>
                 <div class="forecast-item">
                     <p id="forecast-day" class="weekday">Thu</p>
                     <img src="./src/icon-rain.webp" alt="rainy" width="50px">
-                    <span class="temp-high">25°</span><span class="temp-low">12°</span>
+                    <div class="temp-group">
+                        <span class="temp-high">22°</span><span class="temp-low">11°</span>
+                    </div>
                 </div>
                 <div class="forecast-item">
                     <p id="day-5" class="weekday">Fri</p>
                     <img src="./src/icon-snow.webp" alt="snow" width="50px">
-                    <span class="temp-high">15°</span><span class="temp-low">30°</span>
+                    <div class="temp-group">
+                        <span class="temp-high">22°</span><span class="temp-low">11°</span>
+                    </div>
                 </div>
                 <div class="forecast-item">
                     <p id="day-6" class="weekday">Sat</p>
                     <img src="./src/icon-storm.webp" alt="storm" width="50px">
-                    <span class="temp-high">5°</span><span class="temp-low">10°</span>
+                    <div class="temp-group">
+                        <span class="temp-high">22°</span><span class="temp-low">11°</span>
+                    </div>
                 </div>
                 <div class="forecast-item">
                     <p id="day-7" class="weekday">Sun</p>
                     <img src="./src/icon-sunny.webp" alt="sunny" width="50px">
-                    <span class="temp-high">20°</span><span class="temp-low">14°</span>
-                </div>
-
-                <div id="hourly-forecast" class="hourly-forecast">
-
-                    <div id="hourly-forecast-container" class="forecast-container">
-                        <h3>Hourly forecast</h3>
-                        <select name="weekdays" id="days">
-                            <option value="monday">Monday</option>
-                            <option value="tuesday">Tuesday</option>
-                            <option value="wednesday">Wednesday</option>
-                            <option value="thursday">Thursday</option>
-                            <option value="friday">Friday</option>
-                            <option value="saturday">Saturday</option>
-                            <option value="sunday">Sunday</option>
-                        </select>
+                    <div class="temp-group">
+                        <span class="temp-high">22°</span><span class="temp-low">11°</span>
                     </div>
-                    <div id="hourly-temperature" class="hourly-temperature-one hourly">
-                        <p>
-                            <img src="./src/icon-fog.webp" alt="fog" width="30px">3 PM
-                        </p>
-                        <span>20°</span>
-                    </div>
-                    <div id="hourly-temperature" class="hourly-temperature-two hourly">
-                        <p>
-                            <img src="./src/icon-fog.webp" alt="fog" width="30px">4 PM
-                        </p>
-                        <span>20°</span>
-                    </div>
-                    <div id="hourly-temperature" class="hourly-temperature-three hourly">
-                        <p>
-                            <img src="./src/icon-fog.webp" alt="fog" width="30px">5 PM
-                        </p>
-                        <span>20°</span>
-                    </div>
-                    <div id="hourly-temperature" class="hourly-temperature-four hourly">
-                        <p>
-                            <img src="./src/icon-fog.webp" alt="fog" width="30px">6 PM
-                        </p>
-                        <span>20°</span>
-                    </div>
-                    <div id="hourly-temperature" class="hourly-temperature-five hourly">
-                        <p>
-                            <img src="./src/icon-fog.webp" alt="fog" width="30px">7 PM
-                        </p>
-                        <span>20°</span>
-                    </div>
-                    <div id="hourly-temperature" class="hourly-temperature-six hourly">
-                        <p>
-                            <img src="./src/icon-fog.webp" alt="fog" width="30px">8 PM
-                        </p>
-                        <span>20°</span>
-                    </div>
-                    <div id="hourly-temperature" class="hourly-temperature-seven hourly">
-                        <span>
-                            <img src="./src/icon-fog.webp" alt="fog" width="50px">
-                            <p>9 PM</p>
-                        </span>
-                        <span>20°</span>
-                    </div>
-                    <div id="hourly-temperature" class="hourly-temperatureeight hourly">
-                        <span>
-                            <img src="./src/icon-fog.webp" alt="fog" width="50px">
-                            <p>10 PM</p>
-                        </span>
-                        <span>20°</span>
-                    </div>
-
-
                 </div>
             </div>
+
+            <div id="hourly-forecast" class="hourly-forecast">
+
+                <div id="hourly-forecast-container" class="forecast-container">
+                    <h3>Hourly forecast</h3>
+                    <select name="weekdays" id="days">
+                        <option value="monday">Monday</option>
+                        <option value="tuesday">Tuesday</option>
+                        <option value="wednesday">Wednesday</option>
+                        <option value="thursday">Thursday</option>
+                        <option value="friday">Friday</option>
+                        <option value="saturday">Saturday</option>
+                        <option value="sunday">Sunday</option>
+                    </select>
+                </div>
+                <div id="hourly-temperature-one" class="hourly-temperature-one hourly">
+                    <p id="forecast-time" class="hourly-time">
+                        <img src="./src/icon-fog.webp" alt="fog" width="30px" class="weather-icon-small">3 PM
+                    </p>
+                    <span class="temperature-value">20°</span>
+                </div>
+                <div id="hourly-temperature-two" class="hourly-temperature-two hourly">
+                    <p id="forecast-time" class="hourly-time">
+                        <img src="./src/icon-fog.webp" alt="fog" width="30px" class="weather-icon-small">4 PM
+                    </p>
+                    <span class="temperature-value">20°</span>
+                </div>
+                <div id="hourly-temperature-three" class="hourly-temperature-three hourly">
+                    <p id="forecast-time" class="hourly-time">
+                        <img src="./src/icon-fog.webp" alt="fog" width="30px" class="weather-icon-small">5 PM
+                    </p>
+                    <span class="temperature-value">20°</span>
+                </div>
+                <div id="hourly-temperature-four" class="hourly-temperature-four hourly">
+                    <p id="forecast-time" class="hourly-time">
+                        <img src="./src/icon-fog.webp" alt="fog" width="30px" class="weather-icon-small">6 PM
+                    </p>
+                    <span class="temperature-value">20°</span>
+                </div>
+                <div id="hourly-temperature-five" class="hourly-temperature-five hourly">
+                    <p id="forecast-time" class="hourly-time">
+                        <img src="./src/icon-fog.webp" alt="fog" width="30px" class="weather-icon-small">7 PM
+                    </p>
+                    <span class="temperature-value">20°</span>
+                </div>
+                <div id="hourly-temperature-six" class="hourly-temperature-six hourly">
+                    <p id="forecast-time" class="hourly-time">
+                        <img src="./src/icon-fog.webp" alt="fog" width="30px" class="weather-icon-small">8 PM
+                    </p>
+                    <span class="temperature-value">20°</span>
+                </div>
+                <div id="hourly-temperature-seven" class="hourly-temperature-seven hourly">
+                    <p id="forecast-time" class="hourly-time"><img src="./src/icon-fog.webp" alt="fog" width="30px"
+                            class="weather-icon-small">10 PM</p>
+                    <span class="temperature-value">20°</span>
+                </div>
+                <div id="hourly-temperature-eight" class="hourly-temperature-eight hourly">
+                    <p id="forecast-time" class="hourly-time"><img src="./src/icon-fog.webp" alt="fog" width="30px"
+                            class="weather-icon-small">10 PM</p>
+                    <span class="temperature-value">20°</span>
+                </div>
+
+
+            </div>
+
         </div>
 
     </div>

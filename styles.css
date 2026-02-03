@@ -65,16 +65,18 @@ input[type="submit"] {
 }
 
 .forecast {
-  width: 50%;
+  width: 43.5rem;
   height: 150px;
   background: url(./src/bg-today-large.svg);
-  padding: 15px;
+  padding: 10px;
+  margin: 10px;
   border-radius: 10px;
 }
 
 .location,
 .temperature {
   color: hsl(0, 0%, 100%);
+  padding: 5px;
 }
 
 .date {
@@ -83,16 +85,21 @@ input[type="submit"] {
 
 .weather-stats {
   display: flex;
-  justify-content: space-between;
-  /* background: hsl(243, 23%, 30%); */
-  margin: 15px;
+  background: orange;
+  width: 45rem;
+  margin: 10px;
+  gap: 10px;
 }
 
 .detail-item {
-  border-radius: 10px;
   color: hsl(250, 6%, 84%);
   background: blue;
-
+  width: 15rem;
+  height: 5rem;
+  color: hsl(0, 0%, 100%);
+  border-radius: 10px;
+  margin: 5px;
+  padding-bottom: 10px;
   text-align: center;
 }
 
@@ -102,18 +109,29 @@ input[type="submit"] {
 
 h3 {
   color: hsl(0, 0%, 100%);
+  margin: 1rem;
+}
+
+.daily-forecast {
+  background: cyan;
+  width: 45rem;
+  margin: 10px;
+  display: flex;
 }
 
 .forecast-item {
   background: red;
-  width: 16rem;
+  width: 5.5rem;
+  height: 10rem;
   color: hsl(0, 0%, 100%);
   border-radius: 10px;
-  margin: 15px;
+  margin: 5px;
+  padding-bottom: 10px;
 }
 
 .weekday {
   text-align: center;
+  padding: 10px;
 }
 
 .forecast-item img {
@@ -121,18 +139,43 @@ h3 {
   margin: 0 auto;
 }
 
-.hourly-forecast {
-  width: 45%;
-  background: hsl(243, 23%, 30%);
-  border-radius: 10px;
-  margin: 15px;
-  float: right;
+.temp-group {
+  display: flex;
+  justify-content: space-between;
+  margin: 5px;
+  padding: 15px;
+  gap: 10px;
+}
+
+.temp-high {
+  font-weight: bold;
+  color: grey;
+}
+
+.temp-low {
+  color: grey;
 }
 
 .forecast-container {
   display: flex;
+
   justify-content: space-between;
   margin: 5px;
+}
+
+.daily-forecast {
+  display: grid;
+  grid-template-columns: repeat(7, 1fr);
+  grid-template-rows: auto 1fr;
+}
+
+.daily-forecast h3 {
+  grid-row: 1;
+  grid-column: 1 / 7;
+}
+
+.forecast-item {
+  grid-row: 2;
 }
 
 select {
@@ -148,96 +191,35 @@ select {
   text-align: center;
 }
 
-.hourly-temperature-one {
+.hourly-forecast {
+  width: 18rem;
+  background: purple;
+  border-radius: 10px;
+  margin: 15px;
+  padding: 5px;
+}
+
+.hourly {
+  text-align: center;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex: 0 0 auto;
+  width: 15rem;
+  height: 3rem;
+  margin: 5px;
+  padding: 10px;
   color: hsl(0, 0%, 100%);
   background: hsl(243, 23%, 25%);
-  width: 88%;
-  height: 100px;
-  margin: 15px;
-  padding: 10px;
   border-radius: 10px;
   border: 1px solid hsl(243, 30%, 60%);
 }
 
-/* .hourly span {
-  float: right;
-} */
-
-.hourly-temperature-two {
-  color: hsl(0, 0%, 100%);
-  background: hsl(243, 23%, 25%);
-  width: 88%;
-  height: 100px;
-  margin: 15px;
-  padding: 10px;
-  border-radius: 10px;
-  border: 1px solid hsl(243, 30%, 60%);
-}
-
-.hourly-temperature-three {
-  color: hsl(0, 0%, 100%);
-  background: hsl(243, 23%, 25%);
-  width: 88%;
-  height: 100px;
-  margin: 15px;
-  padding: 10px;
-  border-radius: 10px;
-  border: 1px solid hsl(243, 30%, 60%);
-}
-
-.hourly-temperature-four {
-  color: hsl(0, 0%, 100%);
-  background: hsl(243, 23%, 25%);
-  width: 88%;
-  height: 100px;
-  margin: 15px;
-  padding: 10px;
-  border-radius: 10px;
-  border: 1px solid hsl(243, 30%, 60%);
-}
-
-.hourly-temperature-five {
-  color: hsl(0, 0%, 100%);
-  background: hsl(243, 23%, 25%);
-  width: 88%;
-  height: 100px;
-  margin: 15px;
-  padding: 10px;
-  border-radius: 10px;
-  border: 1px solid hsl(243, 30%, 60%);
-}
-
-.hourly-temperature-six {
-  color: hsl(0, 0%, 100%);
-  background: hsl(243, 23%, 25%);
-  width: 88%;
-  height: 100px;
-  margin: 15px;
-  padding: 10px;
-  border-radius: 10px;
-  border: 1px solid hsl(243, 30%, 60%);
-}
-
-.hourly-temperature-seven {
-  color: hsl(0, 0%, 100%);
-  background: hsl(243, 23%, 25%);
-  width: 88%;
-  height: 100px;
-  margin: 15px;
-  padding: 10px;
-  border-radius: 10px;
-  border: 1px solid hsl(243, 30%, 60%);
-}
-
-.hourly-temperature-eight {
-  color: hsl(0, 0%, 100%);
-  background: hsl(243, 23%, 25%);
-  width: 88%;
-  height: 100px;
-  margin: 15px;
-  padding: 10px;
-  border-radius: 10px;
-  border: 1px solid hsl(243, 30%, 60%);
+.hourly-time {
+  display: flex;
+  align-items: center;
+  margin: 0;
+  gap: 5px;
 }
 
 .grid-container {
