@@ -14,12 +14,26 @@
         <div class="dropdown">
             <img src="./src/logo.svg" alt="logo" />
 
-            <select name="units" id="tempUnits" class="temperature-units">
-                <!-- <img src="./src/icon-units.svg" class="units-logo" /> -->
-                <option value="">Units</option>
-                <option value="imperial">Imperial</option>
-                <option value="metric">Metric</option>
-            </select>
+
+            <div class="custom-select" id="unit-dropdown">
+                <div class="select-trigger">
+                    <span>Units</span>
+                    <div class="arrow"></div>
+                </div>
+                <div class="options-container">
+                    <div class="group-label">Temperature</div>
+                    <div class="option" data-value="celsius">Celsius ℃</div>
+                    <div class="option" data-value="fahrenheit">Fahrenheit ℉</div>
+                </div>
+                <hr>
+                <div class="group-label">Wind Speed</div>
+                <div class="option" data-value="kmh">km/h</div>
+                <div class="option" data-value="mph">mph</div>
+                <hr>
+                <div class="group-label">Precipitation</div>
+                <div class="option" data-value="mm">mm</div>
+
+            </div>
         </div>
         <h1>How's the sky looking today?</h1>
 
