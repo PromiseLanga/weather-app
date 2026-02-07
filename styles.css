@@ -27,10 +27,27 @@ body {
 
 .custom-select {
   background: red;
-  width: 200px;
+  width: 150px;
   border-radius: 5px;
   padding: 10px;
   cursor: pointer;
+  margin-left: auto;
+}
+
+.select-trigger {
+  color: hsl(0, 0%, 100%);
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 10px;
+}
+
+.group-label {
+  color: hsl(243, 27%, 23%);
+  font-size: 0.9rem;
+}
+
+.option {
+  color: hsl(0, 0%, 100%);
 }
 
 h1 {
